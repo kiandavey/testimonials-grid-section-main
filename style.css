@@ -50,7 +50,7 @@ main {
 .card {
     border-radius: 10px;
     width: 100%;
-    padding: 50px;
+    padding: 2rem;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -148,7 +148,7 @@ img {
 .comment {
     font-weight: 600;
     color: var(--White);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .story {
@@ -184,10 +184,11 @@ img {
 
 @media (min-width: 68rem) {
     .card-container {
-        max-width: 90rem; 
+        max-width: 80rem; 
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 1.875rem;
     }
 
     .card {
@@ -198,8 +199,12 @@ img {
         grid-column: span 2;
         background-image: url(./images/bg-pattern-quotation.svg);
         background-repeat: no-repeat;
-        background-position: top right 4rem;
+        background-position: top right 20%;
         background-size: 120px;
+    }
+    
+    .jeanette {
+        height: 100%;
     }
 
     .kira {
