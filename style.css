@@ -1,0 +1,190 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --Purple-50: hsl(260, 100%, 95%);
+    --Purple-300: hsl(264, 82%, 80%);
+    --Purple-500: hsl(263, 55%, 52%);
+
+    --White: hsl(0, 0%, 100%);
+    --Grey-100: hsl(214, 17%, 92%);
+    --Grey-200: hsl(0, 0%, 81%);
+    --Grey-400: hsl(224, 10%, 45%);
+    --Grey-500: hsl(217, 19%, 35%);
+    --Dark-blue: hsl(219, 29%, 14%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body {
+    margin: 0;
+    font-size: 0.8125rem;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    width: 100%;
+    max-width: 26.25rem;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card {
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.daniel {
+    background-color: var(--Purple-500);
+}
+
+.daniel img {
+    border: 2px solid var(--Purple-300);
+}
+
+.jonathan {
+    background-color: var(--Grey-500);
+}
+
+.jonathan img {
+    border: 2px solid var(--Grey-400);
+}
+
+.jeanette {
+    background-color: var(--White);
+}
+
+.jeanette img {
+    border: 2px solid var(--Grey-200);
+}
+
+.patrick {
+    background-color: var(--Dark-blue);
+}
+
+.patrick img {
+    border: 2px solid var(--Purple-500);
+}
+
+.kira {
+    background-color: var(--White);
+}
+
+.kira img {
+    border: 2px solid var(--Grey-200);
+}
+
+.personal-info {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.name {
+    color: var(--White);
+    font-weight: 500;
+}
+
+.status {
+    color: var(--Grey-200);
+    font-size: 0.7rem;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.jonathan .personal-info .text .status {
+    color: var(--Grey-200);
+}
+
+.jeanette .personal-info .text .name {
+    color: var(--Grey-500);
+}
+
+.jeanette .personal-info .text .status {
+    color: var(--Grey-400);
+}
+
+.kira .personal-info .text .name {
+    color: var(--Grey-500);
+}
+
+.kira .personal-info .text .status {
+    color: var(--Grey-400);
+}
+
+.comment {
+    font-weight: 600;
+    color: var(--White);
+    font-size: 1.5rem;
+}
+
+.story {
+    color: var(--Grey-200);
+    font-size: 0.925rem;
+    margin: 0;
+}
+
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+}
+
+.jeanette .comment {
+    color: var(--Grey-500);
+}
+
+.jeanette .story {
+    color: var(--Grey-400);
+}
+
+.kira .comment {
+    color: var(--Grey-500);
+}
+
+.kira .story {
+    color: var(--Grey-400);
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (min-width: 68rem) {
+    .card-container {
+        max-width: 69.375rem; 
+        
+    }
+}
